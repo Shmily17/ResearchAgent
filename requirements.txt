@@ -1,0 +1,40 @@
+# --- Core MCP and OpenAI/DashScope Dependencies ---
+# 用于MCP客户端/服务端通信和与大模型API交互
+# mcp.py==0.2.2
+openai>=1.12.0
+python-dotenv>=1.0.0
+
+# --- RAG and Document Processing Dependencies (Langchain - UPDATED) ---
+# 更新了LangChain相关库的版本以解决依赖冲突
+# langchain-core 包含了LangChain的核心抽象
+langchain-core>=0.1.52
+# langchain-community 包含了所有社区集成的组件
+langchain-community>=0.0.38
+# langchain 包含了Chains, Agents等核心应用逻辑
+langchain>=0.1.20
+# langchain-openai 包含了OpenAI的特定集成
+langchain-openai>=0.1.6
+# langchain-ollama 包含了Ollama的特定集成
+langchain-ollama>=0.0.1
+
+# 辅助库
+pypinyin>=0.50.0
+
+# --- Vector Database ---
+# 用于存储和检索文本向量
+chromadb>=0.4.24,<0.5.0
+
+# --- Scientific Paper and Data Handling ---
+# 用于从OpenAlex获取文献数据及处理
+pyalex>=0.1.3
+httpx>=0.27.0
+
+# --- Document Loaders for RAG Indexing ---
+# build_rag_index.py 中用到的文档加载器
+pypdf>=4.0.0
+
+# --- RAG Evaluation Framework (RAGAS) ---
+# 用于评估RAG系统的性能
+# RAGAS本身也依赖于LangChain，这里的版本应该能兼容
+ragas>=0.1.7
+datasets>=2.14.0
