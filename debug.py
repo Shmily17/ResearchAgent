@@ -2,7 +2,7 @@ import chromadb
 from chromadb.config import Settings as ChromaSettings
 
 CHROMA_DB_DIR = "./chroma_db"
-student_id_for_collection = "xiaoi_ming" # 或者罗伟源对应的实际ID
+student_id_for_collection = "xiaoi_ming"
 
 collection_name = f"research_papers_{student_id_for_collection}"
 
@@ -13,4 +13,5 @@ try:
     print(f"Collection '{collection_name}' deleted successfully.")
 except Exception as e:
     # It might raise an exception if the collection doesn't exist, which is fine.
+
     print(f"Error deleting collection '{collection_name}' (or it didn't exist): {e}")
