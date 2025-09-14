@@ -29,8 +29,6 @@ EMBEDDING_MODEL = os.getenv("OLLAMA_EMBEDDING_MODEL", "bge-m3")
 STUDENT_EMAILS = {
     "小明": "",
     "小红": "",
-    "小华": "",
-    "罗伟源": ""
 }
 
 
@@ -228,3 +226,4 @@ if __name__ == "__main__":
          asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
     asyncio.run(main())
+
