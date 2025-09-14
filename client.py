@@ -22,10 +22,7 @@ logging.basicConfig(
 load_dotenv()
 
 STUDENT_EMAILS = {
-    "小明": "",
-    "小红": "",
-    "小华": "",
-    "罗伟源": ""
+
 }
 RAG_KEYWORDS = []
 
